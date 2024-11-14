@@ -21,16 +21,16 @@ const folders = [
   { title: 'three', content: 'Third folder here' }
 ];
 
-class App extends React.Component {
+function App() {
   constructor(props) {
     super(props);
     this.state = {
       showClock: true
     };
   }
-  
+
   toggleClock = () => this.setState({ showClock: !this.state.showClock });
-  
+
   render () {
     return (
       <div className="widgets">
@@ -45,4 +45,3 @@ class App extends React.Component {
 }
 
 export default App;
-
